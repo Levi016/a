@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://static.wixstatic.com/media/639643_b9c1e57422484915aa0978d846a54a11~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.text{
+    padding: 15px;
+}
+
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    margin: 0 5px;
+}
+
+.rating label:before {
+    content: '\2605';
+    font-size: 26px;
+    line-height: 26px;
+    color: #888;
+    text-align: center;
+    display: block;
+}
+
+.rating input:checked + label:before {
+    color: #f90;
+}
